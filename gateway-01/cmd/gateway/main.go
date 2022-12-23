@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"gateway-01/app"
-	"gateway-01/server"
-	"gateway-01/server/handler"
+	"github.com/kwseeker/kratos-gateway/gateway-01/app"
+	"github.com/kwseeker/kratos-gateway/gateway-01/server"
+	"github.com/kwseeker/kratos-gateway/gateway-01/server/handler"
 	"time"
 )
 

@@ -2,7 +2,7 @@ package app
 
 import (
 	"context"
-	"gateway-01/app/transport"
+	"github.com/kwseeker/kratos-gateway/gateway-02/app/transport"
 	"os"
 )
 

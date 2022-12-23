@@ -1,4 +1,4 @@
-module gateway-01
+module github.com/kwseeker/kratos-gateway/gateway-02
 
 go 1.19
 
