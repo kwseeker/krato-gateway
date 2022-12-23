@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"fmt"
+	"github.com/go-kratos/kratos/v2/log"
 	"github.com/kwseeker/kratos-gateway/gateway-02/app"
 	"github.com/kwseeker/kratos-gateway/gateway-02/server"
 	"github.com/kwseeker/kratos-gateway/gateway-02/server/handler"
@@ -30,6 +30,6 @@ func main() {
 		app.Server(srv),
 	)
 	if err := a.Run(); err != nil {
-		_ = fmt.Errorf("failed to run servers: %v", err)
+		log.Errorf("failed to run servers: %v", err)
 	}
 }

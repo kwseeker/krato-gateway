@@ -3,7 +3,7 @@ package app
 import (
 	"context"
 	"errors"
-	"fmt"
+	"github.com/go-kratos/kratos/v2/log"
 	"os"
 	"os/signal"
 	"sync"
@@ -87,7 +87,7 @@ func (a *App) Run() error {
 		case <-c:
 			err := a.Stop() //收到关闭信号，关闭所有servers
 			if err != nil {
-				_ = fmt.Errorf("failed to stop app: %v", err)
+				log.Errorf("failed to stop app: %v", err)
 				return err
 			}
 			return nil
@@ -97,10 +97,10 @@ func (a *App) Run() error {
 
 	//阻塞等待关闭
 	if err := eg.Wait(); err != nil && !errors.Is(err, context.Canceled) {
-		fmt.Printf("gateway app exit! err: %v", err)
+		log.Errorf("gateway app exit! err: %v", err)
 		return err
 	}
-	fmt.Println("gateway app exit!")
+	log.Warn("gateway app exit!")
 	return nil
 }
 
