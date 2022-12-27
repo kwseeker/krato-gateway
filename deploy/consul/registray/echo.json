@@ -1,0 +1,7 @@
+{
+  "service": {
+    "name": "echo",
+    "tags": ["gateway", "echo", "provider"],
+    "port": 18001
+  }
+}
