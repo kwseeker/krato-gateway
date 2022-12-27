@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package echo.v1;
+
+option go_package = "echo/api/echo/v1;v1";
+option java_multiple_files = true;
+option java_package = "echo.v1";
+option objc_class_prefix = "APIEchoV1";
+
+enum ErrorReason {
+  SUCCESS = 0;
+  USER_NOT_FOUND = 1;
+}

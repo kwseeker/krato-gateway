@@ -6,11 +6,11 @@
 package main
 
 import (
-	"echo/internal/biz"
-	"echo/internal/conf"
-	"echo/internal/data"
-	"echo/internal/server"
-	"echo/internal/service"
+	"github.com/kwseeker/kratos-gateway/echo/internal/biz"
+	"github.com/kwseeker/kratos-gateway/echo/internal/conf"
+	"github.com/kwseeker/kratos-gateway/echo/internal/data"
+	"github.com/kwseeker/kratos-gateway/echo/internal/server"
+	"github.com/kwseeker/kratos-gateway/echo/internal/service"
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"

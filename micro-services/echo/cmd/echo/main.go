@@ -4,7 +4,7 @@ import (
 	"flag"
 	"os"
 
-	"echo/internal/conf"
+	"github.com/kwseeker/kratos-gateway/echo/internal/conf"
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/config"

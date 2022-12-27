@@ -3,16 +3,14 @@
 
 openapi: 3.0.3
 info:
-    title: Greeter API
-    description: The greeting service definition.
+    title: Echo API
     version: 0.0.1
 paths:
-    /helloworld/{name}:
+    /echo/{name}:
         get:
             tags:
-                - Greeter
-            description: Sends a greeting
-            operationId: Greeter_SayHello
+                - Echo
+            operationId: Echo_SayHello
             parameters:
                 - name: name
                   in: path
@@ -25,14 +23,13 @@ paths:
                     content:
                         application/json:
                             schema:
-                                $ref: '#/components/schemas/helloworld.v1.HelloReply'
+                                $ref: '#/components/schemas/echo.v1.EchoReply'
 components:
     schemas:
-        helloworld.v1.HelloReply:
+        echo.v1.EchoReply:
             type: object
             properties:
                 message:
                     type: string
-            description: The response message containing the greetings
 tags:
-    - name: Greeter
+    - name: Echo
