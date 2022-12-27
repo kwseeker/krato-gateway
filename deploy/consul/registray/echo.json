@@ -1,7 +1,9 @@
 {
   "service": {
+    "id": "101",
     "name": "echo",
     "tags": ["gateway", "echo", "provider"],
-    "port": 18001
+    "port": 18001,
+    "address": "127.0.0.1"
   }
 }
